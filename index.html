@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music player</title>
+    <link rel="stylesheet" href="music.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><img src="assets/OIG1.316JP9tdBWdZMuDHD.jpeg" alt=""></li>
+            <li>home</li>
+            <li>about</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>best songs</h1>
+        <div class="songlist">
+            <div class="songitem" data-key="0">
+                <span class="tag"><img src="assets/cover/cover 1 .webp" alt=""><span>Antidote </span></span>
+                <span> 3:07 <i class="fa-regular fa-circle-play"></i></span>
+            </div>
+            <div class="songitem" data-key="1">
+                <span class="tag"><img src="assets/cover/cover 2.jpeg" alt=""><span>G.O.A.T</span></span>
+                <span> 3:43 <i class="fa-regular fa-circle-play"></i></span>
+            </div>
+            <div class="songitem" data-key="2">
+                <span class="tag"><img src="assets/cover/cover 3.webp" alt=""><span>Old Money</span></span>
+                <span> 2:08 <i class="fa-regular fa-circle-play"></i></span>
+            </div>
+            <div class="songitem" data-key="3">
+                <span class="tag"><img src="assets/cover/cover4.jpeg" alt=""><span>Jee Ni Lagda</span></span>
+                <span> 2:21 <i class="fa-regular fa-circle-play"></i></span>
+            </div>
+            <div class="songitem" data-key="4">
+                <span class="tag"><img src="assets/cover/cover5.jpg" alt=""><span>52 bars</span></span>
+                <span> 3:41 <i class="fa-regular fa-circle-play"></i></span>
+            </div>
+            <div class="songitem" data-key="5">
+                <span class="tag"><img src="assets/cover/cover6.webp" alt=""><span>Khutti</span></span>
+                <span> 2:12 <i class="fa-regular fa-circle-play"></i></span>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <input id="progressbar" type="range" max="100" min="0" value="0">
+        <!-- icons -->            
+         <div class="icon">
+            <img id="previous" height="50" src="assets/play-skip-back-outline.svg" alt="">
+            <div class="play">
+            <img src="assets/play-outline.svg"  id="play" alt="hi">
+            <img src="assets/pause-outline.svg" id="pause" alt="">
+        </div>
+            <img height="50" src="assets/play-skip-forward-outline.svg" id="next" alt="">
+         </div>
+         <div class="songInfo">
+            <img src="assets/playing.gif" width="42px" alt="" id="gif"> <span id="SongName">Antidote</span>
+        </div>
+
+    </div>
+    <script src="music.js"></script>
+    <script src="https://kit.fontawesome.com/da205f4e66.js" crossorigin="anonymous"></script>
+</body>
+</html>
